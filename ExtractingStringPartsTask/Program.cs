@@ -14,13 +14,14 @@ namespace ExtractingStringPartsTask
             int lenght = state.Length;
             Console.WriteLine(lenght);
             string cityLandmark = (city + " " + landmark);
+            Console.WriteLine(cityLandmark);
             Console.WriteLine(country[0]);
-            Console.WriteLine(city[0] + city[city.Length - 1]);
-      int start = landmark.IndexOf('c');
+            Console.WriteLine($"{city[0]}{city[city.Length - 1]}");
+            int start = landmark.IndexOf('c');
       Console.WriteLine(landmark.Substring(start));
       start = country.IndexOf('S');
       int end = country.IndexOf('A');
-      Console.WriteLine(country.Substring(start - end));
+      Console.WriteLine(country.Substring(end - start));
       Console.WriteLine(state.IndexOf('f') + 1);
 
 
